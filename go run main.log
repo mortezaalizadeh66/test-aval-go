@@ -1,0 +1,7 @@
+go run main.go
+docker build -t first-go.app .
+docker images
+docker run -it -p 8080:8081 first-go.app
+docker run -d -p 8080:8081 first-go.app
+docker ps
+docker kill 06133cc00237
